@@ -2,10 +2,13 @@ header {
     width: 100%;
     min-height: 70px;
     position: fixed;
+    z-index: 100000;
     display: flex;
     align-items: center;
     padding: 0 2em;
-    background: #ffffff;
+    background: #ffffffa9;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     font-family: "montserrat";
     font-weight: bold;
     justify-content: space-between;
@@ -88,12 +91,15 @@ header {
    }
    .show {
     flex-direction: column;
+    padding-top: 10px;
     display: flex;
     position: absolute;
     gap: 40px;
     top: 70px;
     left: 0;
-    background: #ffffff;
+     background: #ffffff;
+    /* backdrop-filter: blur(30px); */
+    /* -webkit-backdrop-filter: blur(30px); */
     width: 100%;
     height: 500px;
     justify-content: flex-start;
