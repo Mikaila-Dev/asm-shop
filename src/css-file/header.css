@@ -7,8 +7,8 @@ header {
     align-items: center;
     padding: 0 2em;
     background: #ffffffa9;
-    backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
     font-family: "montserrat";
     font-weight: bold;
     justify-content: space-between;
