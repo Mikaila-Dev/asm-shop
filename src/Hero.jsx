@@ -85,7 +85,7 @@ export const Hero = () => {
             width: "100%", height: "100%", borderRadius: "20px"
           }} src={heroImage} alt="" />
           <div className="image-details">
-                <p>One easy stop</p>
+                <p className="green-p">One easy stop</p>
                 <p>Stay powered & refreshed</p>
             </div>
        </div>

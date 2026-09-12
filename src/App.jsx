@@ -2,6 +2,7 @@
 import './App.css'
 import { Header } from './Header'
 import { Hero } from './Hero'
+import { Services } from './Services'
 
 function App() {
   
@@ -9,6 +10,7 @@ function App() {
     <>
     <Header />
     <Hero />
+    <Services />
     </>
   )
 }

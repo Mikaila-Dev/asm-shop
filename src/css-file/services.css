@@ -1,0 +1,94 @@
+.services {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background: white;
+    padding-bottom: 5em;
+
+}
+.services-head {
+    color: #0b9a86;
+    padding: 0 0.5em;
+    font-family: "Poppins";
+    margin-top: 30px;
+}
+.services-h {
+    font-family: "Space Grotesk";
+    font-weight: bold;
+    padding: 0 0.5em;
+    font-size: clamp(1rem, 2vw, 3rem);
+   
+}
+.services-p {
+    font-family: "Poppins";
+     margin-bottom: 50px;
+     padding: 0 0.5em;
+}
+.main-services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 1em;
+    gap: 10px;
+    /* font-family: "poppins"; */
+    font-family: "Space Grotesk";
+}
+.phone-accenssories, .data-and-airtime,
+.movies, .drinks {
+    border: 1px solid #f0f8f7;
+    border-radius: 20px;
+    text-align: start;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+     gap: 20px;
+    padding: 1em;
+    transition: all 0.2s ease;
+    box-shadow: 1px 0.5px 5px #0b9a870c ;
+}
+.phone-accenssories:hover, .data-and-airtime:hover,
+.movies:hover, .drinks:hover{
+    border: 1px solid #0b9a86;
+    box-shadow: 1px 0.5px 5px #0b9a8744 ;
+    transform: translateY(-2px);
+}
+
+@media(max-width: 1124px){
+    .main-services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width: 800px){
+    .main-services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 520px){
+    .main-services{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.service-svg {
+    background: #e5f6f2;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em;
+    border-radius: 10px;
+}
+.service-paragraph{
+    color: #59717b;
+}
+.service-more {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.service-more span {
+    border: solid 1px #f0f8f7;
+    border-radius: 10px;
+    padding: 0.3em;
+    color: #59717b;
+}
