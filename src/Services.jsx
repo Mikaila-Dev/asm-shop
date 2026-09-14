@@ -12,7 +12,7 @@ export const Services = () => {
     </div>
 
     <div className="services-h">
-      What We Offer
+      <h1>What We Offer</h1>
     </div>
 
     <div className="services-p">

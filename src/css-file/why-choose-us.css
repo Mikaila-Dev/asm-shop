@@ -23,15 +23,11 @@
 }
 .main-why-choose-us {
     display: grid;
-    /* flex-direction: column; */
     text-align: center;
-    /* flex-direction: column; */
     width: 100%;
-    /* flex-wrap: wrap; */
     grid-template-columns: repeat(3, 1fr);
     padding: 0 1em;
     gap: 10px;
-    /* font-family: "poppins"; */
     font-family: "Space Grotesk";
     justify-content: center;
     gap: 10px;
@@ -49,23 +45,11 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
-/*
-@media(max-width: 620px){
-    .main-why-choose-us{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-@media(max-width: 375px){
-    .main-why-choose-us{
-        grid-template-columns: repeat(1, 1fr);
-    }
-} */
+
 .fast, .reliable, .affordable, .friendly
 , .convenient{
     border: 1.9px solid #f0f8f7;
     max-width: 900px;
-    /* height: 200px; */
-    /* min-height: 50px; */
     border-radius: 20px;
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
