@@ -1,0 +1,94 @@
+.why-choose-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5em 0;
+    background: #102b3e;
+    color: #f8fcfe;
+}
+.why-choose-us-head {
+    font-family: "Poppins";
+    color: #efc94c;
+}
+.why-choose-us-h {
+    font-family: "Space Grotesk";
+}
+.why-choose-us-p{
+    font-family: "poppins";
+    padding: 0 0.5em;
+    text-align: center;
+    opacity: 0.8;
+}
+.main-why-choose-us {
+    display: grid;
+    /* flex-direction: column; */
+    text-align: center;
+    /* flex-direction: column; */
+    width: 100%;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 1em;
+    gap: 10px;
+    /* font-family: "poppins"; */
+    font-family: "Space Grotesk";
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 0 0.5em;
+}
+@media(max-width: 888px){
+    .main-why-choose-us {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 700px){
+    .main-why-choose-us{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/*
+@media(max-width: 620px){
+    .main-why-choose-us{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media(max-width: 375px){
+    .main-why-choose-us{
+        grid-template-columns: repeat(1, 1fr);
+    }
+} */
+.fast, .reliable, .affordable, .friendly
+, .convenient{
+    border: 1.9px solid #f0f8f7;
+    max-width: 900px;
+    /* height: 200px; */
+    /* min-height: 50px; */
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background: #f8fcfe10;
+    color: #f8fcfe;
+    font-family: "space grotesk";
+    border: 1.9px solid #54777f36;
+    /* #54777f */
+    display: flex;
+    text-align: start;
+    /* margin: 0 auto; */
+    flex-direction: column;
+    gap: 20px;
+    padding: 1em;
+    transition: all 0.2s ease;
+    box-shadow: 1px 0.5px 5px rgba(11, 154, 135, 0.144);
+    /* max-width: 1000px; */
+}
+.affordable:hover, .convenient:hover, .fast:hover, 
+.friendly:hover, .reliable:hover {
+   border: 1.9px solid #54777f;
+   transform: translateY(-2px);
+}
+.why-paragraph{
+    font-weight: 100;
+}
