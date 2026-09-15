@@ -30,9 +30,9 @@
     gap: 10px;
     font-family: "Space Grotesk";
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     margin-top: 20px;
-    padding: 0 0.5em;
+    padding: 0 1em;
 }
 @media(max-width: 888px){
     .main-why-choose-us {
@@ -71,7 +71,7 @@
 .affordable:hover, .convenient:hover, .fast:hover, 
 .friendly:hover, .reliable:hover {
    border: 1.9px solid #54777f;
-   transform: translateY(-2px);
+   transform: translateY(-5px);
 }
 .why-paragraph{
     font-weight: 100;

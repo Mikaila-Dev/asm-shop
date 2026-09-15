@@ -58,7 +58,7 @@
 
     border: 1.9px solid rgb(192, 255, 247) ;
     box-shadow: 0 10px 30px rgba(11, 154, 135, 0.19) ;;
-    transform: translateY(-2px);
+    transform: translateY(-5px);
 }
 
 @media(max-width: 888px){
