@@ -1,0 +1,51 @@
+.customer-say {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 1em;
+    background: white;
+    gap: 10px;
+}
+.customer-say-head {
+    color: #0b9a86;
+    font-family: "poppins";
+}
+.customer-say-h {
+    font-family: "space grotesk";
+    text-align: center;
+    font-size: clamp(0.7rem, 2vw, 1rem);
+    /* font-size: 0.8rem; */
+}
+.customer-say-main {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+@media (max-width: 915px){
+    .customer-say-main {
+        flex-direction: column;
+    }
+}
+.customer-say-containers {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1.5px dotted rgba(0, 0, 0, 0.233);
+    padding: 1em 0.5em;
+    border-radius: 20px;
+    max-width: 1000px;
+}
+.say-image {
+    color: #efc94c;
+}
+.say-paragraph {
+    font-family: "poppins";
+    opacity: 0.8;
+}
+.say-name {
+    font-family: "space grotesk";
+}

@@ -7,6 +7,7 @@ export function About(){
             <div className="about-left-side">
                <img style={{
                 width: "100%", height: "100%"
+    
                }} src={leftImage} alt="" />
             </div>
 
