@@ -8,6 +8,7 @@ import { CustomersSay } from './CustomersSay.jsx'
 import { Product } from './Product'
 import { Services } from './Services'
 import { WhyChooseUs } from './WhyChooseUs'
+import { Contact } from './Contact.jsx'
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
     <About />
     <HowItWork />
     <CustomersSay />
+    <Contact />
     </>
   )
 }
