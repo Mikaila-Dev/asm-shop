@@ -5,36 +5,93 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 5em 1em;
+    padding: 0 1em;
+    padding-top: 5em;
+    padding-bottom: 1em;
     background: #0b2230;
+    /* background: red; */
 }
 .footer-main {
     display: flex;
     display: grid;
-    gap: 20px;
+    gap: 70px;
     grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.301);
 }
-@media(max-width: 1000px){
+@media(max-width: 1200px){
     .footer-main{
         grid-template-columns: repeat(2, 1fr);
     }
+}
+@media(max-width: 768px){
+    .footer-main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-copyright {
+        flex-direction: column;
+    }
+}
+.main-section-1-link-images {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.main-section-1-link-images img {
+    background: rgba(255, 255, 255, 0.295);
+    border-radius: 5px;
+    padding: 0.2rem;
+    transition: all 0.2s ease;
+    width: 30px;
+}
+.main-section-1-link-images img:hover {
+    transform: translateY(-4px);
 }
 .main-section-1,
 .main-section-2, 
 .main-section-3, 
 .main-section-4{
-    max-width: 300px;
-    border: 1px solid green;
+    width: 100%;
+    max-width: 700px;
+    /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
     gap: 10px;
     color: #f0f3e9
 }
 .main-section-1 h4,
-.main-section-2 h4, 
-.main-section-3 h4, 
-.main-section-4 h4{
+.main-section-2 h3, 
+.main-section-3 h3, 
+.main-section-4 h3{
    font-family: "space grotesk";
+   margin-bottom: 15px;
+}
+.logo-f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "space grotesk";
+    background: #0b9a86;
+    width: 80px;
+    margin-bottom: 10px;
+    height: 40px;
+    cursor: pointer;
+    /* border-radius: 7px; */
+    
+    font-weight: bold;
+}
+.main-section-1-p {
+    font-family: "poppins";
+    opacity: 0.8;
+}
+.main-section-1 li,
+.main-section-2 li, 
+.main-section-3 li, 
+.main-section-4 li{
+    list-style: none;
+    opacity: 0.8;
+    /* margin-top: 20px; */
 }
 .main-section-1 a,
 .main-section-2 a, 
@@ -44,4 +101,15 @@
     /* font-family: "space grotesk"; */
     font-family: "poppins";
     text-decoration: none;
+}
+.footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0;
+    position: relative;
+    left: 0;
+    font-family: "space grotesk";
+    opacity: 0.7;
+    width: 100%;
 }

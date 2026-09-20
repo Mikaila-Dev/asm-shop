@@ -6,12 +6,13 @@ header {
     display: flex;
     align-items: center;
     padding: 0 2em;
-    background: #ffffffa9;
+    background: #ffffff;
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
     /* font-family: "montserrat"; */
     font-family: "space grotesk";
     font-weight: bold;
+    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.322);
     justify-content: space-between;
 }
 .logo {
@@ -20,7 +21,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 7px;
+    /* border-radius: 7px; */
     width: 80px;
     height: 40px;
     cursor: pointer;
@@ -43,9 +44,9 @@ header {
     color: #59717b;
     /* transition: all 0.3s ease; */
 }
-.nav-links li a:hover {
+/* .nav-links li a:hover {
     border-bottom: 2px solid #0b9a86;
-}
+} */
 .contact-button {
     background: #0b9a86;
     padding: 0.8rem 1rem;
@@ -64,7 +65,7 @@ header {
 .hamburger-button {
     display: none;
     flex-direction: column;
-    border: 1px solid #59717b;
+    /* border: 1px solid #59717b; */
     gap: 0.2em;
     padding: 0.4rem;
     border-radius: 7px;
@@ -74,7 +75,7 @@ header {
     width: 20px;
     height: 3px;
     background: black;
-    border-radius: 2px;
+    /* border-radius: 2px; */
 }
 @media (max-width: 820px){
    .nav-and-button {

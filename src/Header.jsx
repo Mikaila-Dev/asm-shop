@@ -28,7 +28,7 @@ export const Header = ()=> {
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <button className="contact-button">Contact Us</button>
+        {/* <button className="contact-button">Contact Us</button> */}
         </div>
         <div onClick={handleClickHamburger} className="hamburger-button">
             <span className="bar"></span>
