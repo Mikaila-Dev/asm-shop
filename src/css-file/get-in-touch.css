@@ -1,0 +1,47 @@
+.get-in-touch {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 5em 1em;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    background: #e5f6f2;
+}
+.get-in-touch-h {
+    font-family: "space grotesk";
+}
+.get-in-touch-p {
+    font-family: "poppins";
+    opacity: 0.8;
+}
+.get-in-touch-a{
+    display: flex;
+    width: 100%;
+}
+.get-in-touch-a a{
+    height: 50px;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.get-in-touch-a button {
+    font-family: "space grotesk";
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: #0a9a86;
+    border: none;
+    color: #f0f3e9;
+    padding: 1em 0.5em;
+    width: 50%;
+    max-width: 250px;
+    font-weight: bolder;
+    border-radius: 25px;
+}
