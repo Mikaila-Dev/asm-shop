@@ -1,12 +1,16 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import "./css-file/header.css"
+import { Link } from "react-router-dom";
+import {motion} from "motion/react"
+
 export const Header = ()=> {
     const [hamburger, setHamburger] = useState(false);
-    const [reload, setReload] = useState(0)
+    const [reload, setReload] = useState(0);
+   
+
 
     const handleClickHamburger = () => {
        setHamburger(!hamburger);
-    //    setReload(prevKey => prevKey + 1)
     }
   
 
@@ -21,14 +25,15 @@ export const Header = ()=> {
         >
         <nav>
             <ul className="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+               
+                <Link className="link" to="/">Home</Link>
+                <Link className="link" to="/services">Services</Link>
+                <Link className="link" to="/product">Product</Link>
+                <Link className="link" to="/about">About</Link>
+                <Link className="link" to="/contact">Contact</Link>
             </ul>
         </nav>
-        {/* <button className="contact-button">Contact Us</button> */}
+    
         </div>
         <div onClick={handleClickHamburger} className="hamburger-button">
             <span className="bar"></span>

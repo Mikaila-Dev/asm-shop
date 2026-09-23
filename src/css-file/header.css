@@ -15,6 +15,11 @@ header {
     box-shadow: 2px 0px 3px #bcc8ce;
     justify-content: space-between;
 }
+.active {
+  color: red;
+  font-weight: bold;
+  border-bottom: 2px solid red;
+}
 .logo {
     background: #0b9a86;
     color: #f0f8f7;
@@ -39,9 +44,10 @@ header {
 .nav-links li {
     list-style: none;
 }
-.nav-links li a{
+.link{
     text-decoration: none;
-    color: #59717b;
+    /* color: #59717b; */
+    color: black;
     /* transition: all 0.3s ease; */
 }
 /* .nav-links li a:hover {
@@ -117,7 +123,7 @@ header {
     align-items: flex-start;
     /* display: none; */
    }
-   .nav-links li a {
+   .link {
     margin-left: 2em;
    }
    .contact-button {

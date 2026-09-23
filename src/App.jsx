@@ -1,31 +1,32 @@
+import { Routes, Route } from "react-router-dom";
+import { About } from './About.jsx';
 
-import { About } from './About'
-import './App.css'
-import { Header } from './Header'
-import { Hero } from './Hero'
-import { HowItWork } from './HowItWork'
+import { Header } from './Header.jsx'
+import { Hero } from './Hero.jsx'
+import { HowItWork } from './HowItWork.jsx'
 import { CustomersSay } from './CustomersSay.jsx'
-import { Product } from './Product'
-import { Services } from './Services'
-import { WhyChooseUs } from './WhyChooseUs'
+import { Product } from './Product.jsx'
+import { Services } from './Services.jsx'
+import { WhyChooseUs } from './WhyChooseUs.jsx'
 import { Contact } from './Contact.jsx'
 import { GetInTouch } from './GetInTouch.jsx'
 import { Footer } from './Footer.jsx'
+import { Home } from "./Home.jsx";
+
 
 function App() {
   
   return (
     <>
-    <Header />
-    <Hero />
-    <Services />
-    <WhyChooseUs />
-    <Product />
-    <About />
-    <HowItWork />
-    <CustomersSay />
-    <Contact />
-    <GetInTouch />
+   <Header />
+
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/product" element={<Product />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
     <Footer />
     </>
   )

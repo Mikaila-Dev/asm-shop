@@ -3,13 +3,22 @@
     flex-direction: column;
     gap: 10px;
     text-align: center;
-    padding: 5em 0.5em;
+    padding: 10rem 1em;
     background: #f5f8f7;
 }
 .product-head {
     text-align: center;
     color: #0b9a86;
     font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-head p{
+    background: #0b9a8725;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    border: 1.2px solid #0b9a86;
 }
 .product-h {
     font-family: "Space Grotesk";

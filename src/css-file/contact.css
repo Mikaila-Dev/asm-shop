@@ -4,7 +4,7 @@
     display: grid;
     /* align-items: center; */
     grid-template-columns: repeat(2, 1fr);
-    padding: 5em 1em;
+    padding: 10em 1rem;
     gap: 20px;
     transition: all 0.4s ease;
 }
@@ -31,6 +31,12 @@
 .contact-head {
     color: #efc94c;
     font-family: "poppins";
+}
+.contact-head p {
+    background: #efc94c4d;
+    border: 1.2px solid #efc94c;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
 }
 .contact-h {
     font-family: "space grotesk";

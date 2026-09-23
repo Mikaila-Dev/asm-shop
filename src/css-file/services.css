@@ -4,15 +4,29 @@
     flex-direction: column;
     gap: 10px;
     text-align: center;
+    
     background: white;
-    padding-bottom: 5em;
+    padding: 5em 1em;
 
 }
 .services-head {
     color: #0b9a86;
+    /* background: #0b9a874d;
+    border: 1.2px solid #0b9a86;
+    max-width: 150px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0 0.5em;
     font-family: "Poppins";
     margin-top: 30px;
+}
+.services-head p {
+    background: #0b9a8725;
+    border: 1.2px solid #0b9a86;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    max-width: 150px;
 }
 .services-h {
     font-family: "Space Grotesk";
@@ -26,6 +40,9 @@
      margin-bottom: 50px;
      padding: 0 0.5em;
      opacity: 0.8;
+}
+.services-p p {
+    opacity: 0.8;
 }
 .main-services {
     display: grid;

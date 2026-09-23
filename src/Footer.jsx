@@ -30,19 +30,19 @@ export function Footer(){
 
             <div className="main-section-2">
                 <h3>Quick Links</h3>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#product">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </div>
 
             <div className="main-section-3">
                 <h3>Services</h3>
-                <li><a href="#">Phone Accessories</a></li>
-                <li><a href="#">Data & Airtime</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">Cold Drinks</a></li>
+                <li><a href="#services">Phone Accessories</a></li>
+                <li><a href="#services">Data & Airtime</a></li>
+                <li><a href="#services">Movies</a></li>
+                <li><a href="#services">Cold Drinks</a></li>
                 {/* <li><a href="#">Phone Accessories</a></li> */}
             </div>
 

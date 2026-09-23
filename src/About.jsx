@@ -1,17 +1,25 @@
 import leftImage from "./assets/about-image.avif";
+import {motion} from "motion/react"
 import "./css-file/about.css"
 export function About(){
     return(
-        <section className="about">
+        <section id="about" className="about">
 
-            <div className="about-left-side">
+            <motion.div 
+            initial={{opacity: 0, y: 10, scale: 0.7}} whileInView={{opacity: 1, y: -10, scale: 1}}
+            transition={{duration: 0.2, ease: "backIn"}}
+            
+            className="about-left-side">
                <img style={{
-                width: "100%", height: "100%"
+                width: "100%", minHeight: "100%"
     
                }} src={leftImage} alt="" />
-            </div>
+            </motion.div>
 
-            <div className="about-right-side">
+            <motion.div 
+            initial={{opacity: 0, y: 10, scale: 0.7}} whileInView={{opacity: 1, y: -10, scale: 1}}
+            transition={{duration: 0.2, ease: "backIn"}}
+            className="about-right-side">
                 <div className="about-head">
                     <p>Our story</p>
                 </div>
@@ -38,7 +46,7 @@ export function About(){
                 <div className="about-learn-more">
                     <a href="#">Learn More →</a>
                 </div>
-            </div>
+            </motion.div>
         </section>
 
     )

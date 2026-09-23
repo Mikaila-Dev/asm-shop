@@ -1,5 +1,6 @@
+import { motion } from "motion/react";
 import "./css-file/why-choose-us.css";
-
+// import { motion } from "motion/react";
 import affordable from "./assets/affordable.svg";
 import fast from "./assets/fast.svg"
 import friend from "./assets/friend.svg";
@@ -8,21 +9,33 @@ import location from "./assets/location-2.svg"
 export function WhyChooseUs(){
 return(
     <section className="why-choose-us">
-        <div className="why-choose-us-head">
+        <motion.div 
+         initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
+         transition={{duration: 0.1, ease: "backIn"}}
+        className="why-choose-us-head">
            <p>Why locals choose us</p>
-        </div>
+        </motion.div>
 
 
-        <div className="why-choose-us-h">
+        <motion.div 
+        initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
+        transition={{duration: 0.1, ease: "backIn"}}
+        className="why-choose-us-h">
            <h1>Why Choose Us</h1>
-        </div>
+        </motion.div>
 
-        <div className="why-choose-us-p">
+        <motion.div
+        initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 0.8, y: -10, scale: 1}}
+        transition={{duration: 0.1, ease: "backIn"}}
+        className="why-choose-us-p">
            <p>We make daily essentials feel easy: quick help, dependable service, and a genuinely welcoming stop.</p>
-        </div>
+        </motion.div>
 
         <div className="main-why-choose-us">
-            <div className="fast">
+            <motion.div 
+            initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
+            whileHover={{y: -20}} transition={{ease: "backIn", duration: 0.1}}
+            className="fast">
                 <div className="why-choose-us-svg">
                    <img style={{
                     width: "40px"
@@ -34,9 +47,12 @@ return(
                 <div className="why-paragraph">
                     <p>Quick service, less waiting. Get what you need and get on with your day.</p>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className="reliable">
+            <motion.div
+            initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
+            whileHover={{y: -20}} transition={{ease: "backIn", duration: 0.3}}
+             className="reliable">
                 <div className="why-choose-us-svg">
                     <img style={{
                     width: "40px"
@@ -48,9 +64,12 @@ return(
                 <div className="why-paragraph">
                 <p>A service you can count on, with consistent care every time.</p>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className="affordable">
+            <motion.div
+            initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
+            whileHover={{y: -20}} transition={{ease: "backIn", duration: 0.5}}
+            className="affordable">
                 <div className="why-choose-us-svg">
                     <img style={{
                     width: "40px"
@@ -62,9 +81,12 @@ return(
                 <div className="why-paragraph">
                  <p>More value, less spending, with fair prices across the essentials.</p>
                </div>
-            </div>
+            </motion.div>
 
-            <div className="friendly">
+            <motion.div
+            initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
+            whileHover={{y: -20}} transition={{ease: "backIn", duration: 0.1}}
+            className="friendly">
                 <div className="why-choose-us-svg">
                     <img style={{
                     width: "40px"
@@ -75,10 +97,13 @@ return(
                 </div>
                 <div className="why-paragraph">
                  <p>You’re always welcome here. Expect respectful, helpful service.                </p>
-</div>
             </div>
+            </motion.div>
 
-            <div className="convenient">
+            <motion.div
+            initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
+            whileHover={{y: -20}} transition={{ease: "backIn", duration: 0.3}}
+            className="convenient">
                 <div className="why-choose-us-svg">
                     <img style={{
                     width: "40px"
@@ -90,7 +115,7 @@ return(
                 <div className="why-paragraph">
                     <p>Everything you need, close by, in one easy neighborhood stop.</p>
                  </div>
-                </div>
+                </motion.div>
 
         </div>
     </section>

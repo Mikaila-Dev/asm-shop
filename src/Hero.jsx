@@ -1,6 +1,12 @@
-import "./css-file/hero.css"
+import "./css-file/hero.css";
+// import { motion } from "motion/react";
 import locationImage from "./assets/location.svg";
 import heroImage from "./assets/hero-image.avif";
+import { Services } from "./Services";
+import { WhyChooseUs } from "./WhyChooseUs";
+import {motion} from "motion/react"
+
+
 
 export const Hero = () => {
     return(<>
@@ -53,9 +59,13 @@ export const Hero = () => {
      </div>
      </div> */}
 
-     <section className="hero">
-      <div className="hero-title">
-         <div className="hero-head">
+     <section id="#hero" className="hero">
+      <motion.div 
+      initial={{opacity: 0, y: 11, scale: 0.7}} transition={{duration: 0.3, ease: "backIn"} }
+      whileInView={{opacity: 1, y: -11, scale: 1}}
+      className="hero-title">
+         <div
+          className="hero-head">
             Your everyday essentials hub
         </div>
 
@@ -79,8 +89,11 @@ export const Hero = () => {
             <p>Conveniently close to you</p>
         </div>
 
-      </div>
-       <div className="hero-images">
+      </motion.div>
+       <motion.div 
+       initial={{opacity: 0, y: 11, scale: 0.7}} transition={{duration: 0.5, ease: "backIn"} }
+      whileInView={{opacity: 1, y: -11, scale: 1}}
+       className="hero-images">
            <img style={{
             width: "100%", height: "100%", borderRadius: "20px"
           }} src={heroImage} alt="" />
@@ -88,7 +101,7 @@ export const Hero = () => {
                 <p className="green-p">One easy stop</p>
                 <p>Stay powered & refreshed</p>
             </div>
-       </div>
+       </motion.div>
 
      </section>
       </>

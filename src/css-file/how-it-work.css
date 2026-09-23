@@ -22,6 +22,12 @@
     font-family: "poppins";
     color: #0b9a86;
 }
+.how-it-work-head p {
+     background: #0b9a8725;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    border: 1.2px solid #0b9a86;
+}
 .how-it-work-h {
     font-family: "space grotesk";
     display: flex;

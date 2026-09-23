@@ -4,13 +4,22 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 5em 0;
+    padding: 5rem 1rem;
     background: #102b3e;
     color: #f8fcfe;
 }
 .why-choose-us-head {
     font-family: "Poppins";
     color: #efc94c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.why-choose-us-head p {
+    background: #efc94c4d;
+    border: 1.2px solid #efc94c;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
 }
 .why-choose-us-h {
     font-family: "Space Grotesk";

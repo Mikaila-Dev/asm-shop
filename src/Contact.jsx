@@ -1,9 +1,13 @@
-import "./css-file/contact.css"
+import "./css-file/contact.css";
+import { motion } from "motion/react";
 
 export function Contact(){
     return(
-        <section className="contact">
-           <div className="contact-left">
+        <section id="contact" className="contact">
+           <motion.div 
+           initial={{opacity: 0, y: 10, scale: 0.7}} whileInView={{opacity: 1, y: -10, scale: 1}}
+            transition={{duration: 0.2, ease: "backIn"}}
+           className="contact-left">
               <div className="contact-head">
                 <p>Come say hello</p>
               </div>
@@ -19,25 +23,25 @@ export function Contact(){
               <div className="contact-main">
 
                 <div className="contact-all">
-                    <img src="" alt="" />
+                    {/* <img src="" alt="" /> */}
                     <p>Gadamayo hayin gada</p>
                 </div>
 
                 <div className="contact-all">
-                    <img src="" alt="" />
+                    {/* <img src="" alt="" /> */}
                     <a href="09117366829">+234 911 736 6829</a>
                 </div>
                 
                 <div className="contact-all">
-                    <img src="" alt="" />
+                    {/* <img src="" alt="" /> */}
                      <a href="#">Chat with us on WhatsApp</a>
                 </div>
                 <div className="contact-all">
-                    <img src="" alt="" />
+                    {/* <img src="" alt="" /> */}
                     <p>Mon–Sat, 7:00 AM–9:00 PM</p>
                 </div>
                 <div className="contact-all">
-                    <img src="" alt="" />
+                    {/* <img src="" alt="" /> */}
                     <a href="#">mikailamohammad23@gmail.com</a>
                 </div>
               </div>
@@ -48,11 +52,14 @@ export function Contact(){
                     </a>
                 </div>
 
-           </div>
+           </motion.div>
 
-           <div className="contact-right">
+           <motion.div
+           initial={{opacity: 0, y: 10, scale: 0.7}} whileInView={{opacity: 1, y: -10, scale: 1}}
+            transition={{duration: 0.2, ease: "backIn"}}
+           className="contact-right">
               
-           </div>
+           </motion.div>
         </section>
     )
 }
