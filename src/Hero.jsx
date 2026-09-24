@@ -4,7 +4,7 @@ import locationImage from "./assets/location.svg";
 import heroImage from "./assets/hero-image.avif";
 import { Services } from "./Services";
 import { WhyChooseUs } from "./WhyChooseUs";
-import {motion} from "motion/react"
+import {backIn, motion} from "motion/react"
 
 
 
@@ -13,6 +13,9 @@ export const Hero = () => {
        <div className="main-hero">
             <div className="style-box1"></div>
             <div className="style-box2"></div>    
+            <div className="style-box3"></div>    
+            <div className="style-box4"></div>    
+            <div className="style-box5"></div>    
         </div>
 
    
@@ -60,26 +63,37 @@ export const Hero = () => {
      </div> */}
 
      <section id="#hero" className="hero">
-      <motion.div 
-      initial={{opacity: 0, y: 11, scale: 0.7}} transition={{duration: 0.3, ease: "backIn"} }
-      whileInView={{opacity: 1, y: -11, scale: 1}}
+      <div 
+    //   initial={{opacity: 0, y: 11, scale: 0.7}} transition={{duration: 0.3, ease: "backIn"} }
+    //   whileInView={{opacity: 1, y: -11, scale: 1}}
       className="hero-title">
-         <div
+         <motion.div initial={{y: 2, opacity: 0}}
+         whileInView={{opacity: 1, y: -2}}
+         transition={{duration: 0.1, ease: "easeIn"}}
           className="hero-head">
             Your everyday essentials hub
-        </div>
+        </motion.div>
 
-        <div className="hero-h">
+        <motion.div initial={{y: 2, opacity: 0}}
+         whileInView={{opacity: 1, y: -2}}
+         transition={{duration: 0.3, ease: "easeIn"}}
+        className="hero-h">
             <h1>Charge up. Connect. Chill.</h1>
-        </div>
+        </motion.div>
 
-        <div className="hero-p">
+        <motion.div initial={{y: 2, opacity: 0}}
+         whileInView={{opacity: 1, y: -2}}
+         transition={{duration: 0.5, ease: "easeIn"}}
+        className="hero-p">
           <p>Phone charging, quality accessories, data, entertainment, and cold drinks — all in one friendly neighborhood spot.</p>
-        </div>
+        </motion.div>
 
         <div className="hero-buttons">
-            <button className="hero-button1">Explore Services</button>
-            <button className="hero-button2">Contact Us</button>
+            <a className="hero-button-link-1" href="#services">
+                <button className="hero-button1">Explore Services</button>
+            </a>
+            
+            {/* <button className="hero-button2">Contact Us</button> */}
         </div>
 
         <div className="location">
@@ -89,7 +103,7 @@ export const Hero = () => {
             <p>Conveniently close to you</p>
         </div>
 
-      </motion.div>
+      </div>
        <motion.div 
        initial={{opacity: 0, y: 11, scale: 0.7}} transition={{duration: 0.5, ease: "backIn"} }
       whileInView={{opacity: 1, y: -11, scale: 1}}
