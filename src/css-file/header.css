@@ -132,3 +132,11 @@ header {
     margin-right: 30px;
    }
 }
+@media(max-width: 420px){
+    header {
+        padding: 0.8rem;
+    }
+    .link {
+    margin-left: 0.8rem;
+   }
+}
