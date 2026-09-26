@@ -12,7 +12,7 @@ header {
     /* font-family: "montserrat"; */
     font-family: "space grotesk";
     font-weight: bold;
-    box-shadow: 2px 0px 3px #bcc8ce;
+    box-shadow: 1px 0px 1px #cccbcb00;
     justify-content: space-between;
 }
 .active {
@@ -40,6 +40,8 @@ header {
     display: flex;
     align-items: center;
     gap: 40px;
+    /* font-weight: 400;
+    font-size: 2rem; */
 }
 .nav-links li {
     list-style: none;
@@ -97,12 +99,18 @@ header {
     justify-content: space-between;
     align-items: start;
    }
+   .nav-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* font-weight: 200; */
+}
    .show {
     flex-direction: column;
     padding-top: 10px;
     display: flex;
     position: absolute;
-    gap: 40px;
+    /* gap: 40px; */
     top: 70px;
     left: 0;
      background: #ffffff;
@@ -125,6 +133,7 @@ header {
    }
    .link {
     margin-left: 2em;
+    padding: 0;
    }
    .contact-button {
     width: 70%;

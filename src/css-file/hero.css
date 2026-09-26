@@ -50,23 +50,23 @@
     background: #cceee7;
     border-radius: 10px 80px 100px 120px;
     position: absolute;
-    top: 2em;
+    top: 5vh;
     right: 5em;
 }
 .style-box2 {
-    background: #f0d9a6;
-    width: 200px;
+    background: #e9bf65;
+    width: 100px;
     display: flex;
     height: 200px;
     border-radius: 700px 30px 700px 30px;
     position: absolute;
-    top: 60vh;
-    right: 50%;
+    top: 50vh;
+    right: 40%;
 }
 
 .style-box3 {
-    background: #cceee7;
-    width: 200px;
+    background:  #cceee7;
+    width: 300px;
     display: flex;
     height: 200px;
     border-radius: 0 100% 0 0;
@@ -75,7 +75,7 @@
 }
 .style-box4 {
     background: #fcd073;
-    width: 200px;
+    width: 300px;
     display: flex;
     height: 200px;
     border-radius: 0 100% 0 0;
@@ -167,7 +167,8 @@
     opacity: 0.8;
 }
 .image-details {
-    background: white;
+    background: rgba(255, 255, 255, 0.295);
+    backdrop-filter: blur(150px);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -185,8 +186,8 @@
 .hero {
     position: relative;
     /* top: 70px; */
-    background: #f5f8f73a;
-    backdrop-filter: blur(150px);
+    background: #f5f8f700;
+    backdrop-filter: blur(90px);
     width: 100%;
     min-height: 100vh;
     

@@ -81,9 +81,11 @@ export const Hero = () => {
             <h1>Charge up. Connect. Chill.</h1>
         </motion.div>
 
-        <motion.div initial={{y: 2, opacity: 0}}
-         whileInView={{opacity: 1, y: -2}}
-         transition={{duration: 0.5, ease: "easeIn"}}
+        <motion.div 
+        initial={{y: 0.3, opacity: 0}}
+         whileInView={{opacity: 1, y: -0.2}}
+         transition={{ duration: 0.3, ease: "backOut"}}
+         
         className="hero-p">
           <p>Phone charging, quality accessories, data, entertainment, and cold drinks — all in one friendly neighborhood spot.</p>
         </motion.div>
