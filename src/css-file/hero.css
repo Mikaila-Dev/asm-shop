@@ -1,13 +1,4 @@
-.hero-section {
-    background: #f5f8f7 ;
-    max-width: 100%;
-    min-height: 100vh;
-}
 
-.main-hero {
-    max-width: 100%;
-    top: 100px;
-}
 .titiles-and-image {
     width: 100%;
     position: relative;
@@ -94,15 +85,24 @@
     right: 0;
 }
 .green-p {
-    color: #0b9a86;
+    color: #000000;
 }
 .hero-head {
-    font-family: "Poppins";
+    /* font-family: "Poppins"; */
+    font-family: "roboto";
+    /* color: white; */
+    color: rgba(0, 0, 0, 0.836);
+    /* font-family: "viga"; */
     opacity: 0.8;
     
 }
 .hero-h {
-    font-family: "Space Grotesk";
+    /* font-family: "Space Grotesk"; */
+    /* font-family: "roboto"; */
+    font-family: "viga";
+    color: rgba(0, 0, 0, 0.836);
+    /* font-family: "Josefin Sans"; */
+    font-size: 1.8rem;
     /* text-align: start;
     display: flex;
     justify-content: center; */
@@ -111,9 +111,12 @@
 
 /* 751 */
 .hero-p {
-    font-family: "poppins";
+    /* font-family: "poppins"; */
+    font-family: "roboto";
     /* padding-right: 2rem; */
     max-width: 500px;
+    color: rgba(0, 0, 0, 0.836);
+
     text-align: start;
 }
 .hero-buttons {
@@ -134,7 +137,8 @@
     width: 110%;
 
     height: 100%;
-    font-weight: bold;
+    font-weight: 400;
+    font-family: "roboto";
     font-size: 1.3rem;
     color: #ffffff;
     /* min-width: 120px; */
@@ -147,8 +151,12 @@
 }
 .hero-buttons a {
     background: linear-gradient(140deg, #fcd073, #0b9a86);
-    font-weight: bold;
-    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
     width: 80%;
     min-width: 110px;
     height: 60px;
@@ -158,6 +166,7 @@
     border: 1px solid #cceee7;
     transition: all 0.2s ease;
     box-shadow: 0px 6px 15px #0b9a871c;
+    font-family: "roboto";
 }
 
 .location {
@@ -185,17 +194,20 @@
 
 .hero {
     position: relative;
+    z-index: 100000;
     /* top: 70px; */
     background: #f5f8f700;
     backdrop-filter: blur(90px);
+    justify-content: center;
     width: 100%;
     min-height: 100vh;
-    
+    /* font-family: "roboto"; */
     display: flex;
     grid-template-columns: repeat(2, 1fr);
     padding: 0 2rem;
     flex-wrap: wrap;
-    gap: 20px;
+    /* text-align: center; */
+    gap: 90px;
     align-items: center;
 }
 .hero-title {
@@ -203,7 +215,7 @@
     height: 400px;
     background: none;
     /* position: relative; */
-    margin-top: 50vh;
+    top: 30vh;
     flex-basis: 350px;
     flex-grow: 2;
     flex-shrink: 2;
@@ -211,12 +223,9 @@
     /* align-items: center; */
     justify-content: center;
     gap: 60px;
-
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* max-width: 800px; */
-    /* top: 200px; */
     z-index: 100;
 }
 @media(max-width: 783px){
@@ -230,12 +239,28 @@
         margin-bottom: 5em;
     }
     .hero-p {
+        /* color: red; */
+        text-align: center;
+        justify-content: center;
+        color: red;
+    }
+    
+    .hero-buttons a {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .hero-p {
     /* font-family: "poppins";
     padding-right: 2rem;
     max-width: 500px; */
     /* display: flex;
     justify-content: flex-end; */
     margin: 0 auto;
+    text-align: center;
+    justify-content: center;
 }
 .hero-buttons {
     margin: 0 auto;
@@ -250,17 +275,8 @@
 }
 
 }
-@media(max-width: 751px){
-    .hero-p {
-        /* color: red; */
-        text-align: center;
-    }
-    
-    .hero-buttons a {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
+@media(max-width: 768px){
+    /*  */
     .hero-buttons {
     font-family: "Poppins";
     width: 100%;
@@ -279,6 +295,7 @@
     background: #dff1ed;
     padding: 1rem;
     border-radius: 10px;
+    position: relative;
     margin: 0 auto;
     flex-basis: 350px;
     flex-grow: 2;
@@ -293,5 +310,8 @@
 @media(max-width: 752px){
      .hero-title {
         margin-top: 70px;
+    }
+    .hero-images {
+        margin-bottom: 40px;
     }
 }

@@ -12,7 +12,7 @@ import { GetInTouch } from "./GetInTouch";
 export function Home(){
     return(
         <>
-        <Header />
+        {/* <Header /> */}
         <Hero />
         <Services />
         <WhyChooseUs />

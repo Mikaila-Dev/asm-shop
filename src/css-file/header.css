@@ -1,17 +1,18 @@
 header {
     width: 100%;
-    min-height: 70px;
-    position: fixed;
-    z-index: 100000;
+    height: 70px;
+    position: relative;
+    /* margin-bottom: 20px; */
+    /* border: 1.5px solid black; */
+    z-index: 900000000000000000000000;
     display: flex;
     align-items: center;
     padding: 0 2em;
     background: #ffffff;
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
-    /* font-family: "montserrat"; */
-    font-family: "space grotesk";
-    font-weight: bold;
+    font-family: "roboto";
+
     box-shadow: 1px 0px 1px #cccbcb00;
     justify-content: space-between;
 }
@@ -29,6 +30,7 @@ header {
     /* border-radius: 7px; */
     width: 80px;
     height: 40px;
+    font-family: "roboto";
     cursor: pointer;
 }
 .nav-and-button {

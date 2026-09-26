@@ -1,5 +1,6 @@
 .services {
     position: relative;
+    /* top: 100vh; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -26,12 +27,19 @@
     border: 1.2px solid #0b9a86;
     border-radius: 20px;
     padding: 0.3rem 1rem;
+    font-family: "roboto";
     max-width: 150px;
 }
 .services-h {
-    font-family: "Space Grotesk";
-    font-weight: bold;
+    /* font-family: "Space Grotesk"; */
+    /* font-family: "Josefin Sans"; */
+    /* font-family: "roboto"; */
+    font-family: "viga";
+    color: #272626;
+    font-weight: 500;
+    /* font-size: 4rem; */
     padding: 0 0.5em;
+    color: red;
     /* font-size: clamp(1rem, 2vw, 3rem); */
    
 }
@@ -40,6 +48,7 @@
      margin-bottom: 50px;
      padding: 0 0.5em;
      opacity: 0.8;
+
 }
 .services-p p {
     opacity: 0.8;
@@ -77,7 +86,12 @@
     box-shadow: 0 10px 30px rgba(11, 154, 135, 0.19) ;;
     transform: translateY(-5px);
 }
-
+.service-title h3 {
+    font-family: "viga";
+    /* font-family: "roboto"; */
+    font-weight: 100;
+    color: rgb(68, 67, 67);
+}
 @media(max-width: 888px){
     .main-services {
         grid-template-columns: repeat(2, 1fr);
@@ -100,17 +114,23 @@
 }
 .service-paragraph{
     color: #59717b;
+    /* color: red; */
+    font-family: "roboto";
 }
 .service-more {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 .service-more span {
     border: solid 1px #f0f8f7;
+    font-family: "roboto";
+    /* font-family: 4rem; */
     border-radius: 10px;
     padding: 0.3em;
+    /* color: red; */
     color: #59717b;
+    font-size: 0.8rem;
 }
 @media(max-width: 420px){
     .services {
