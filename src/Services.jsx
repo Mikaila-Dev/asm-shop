@@ -3,7 +3,7 @@ import smartPhone from "./assets/smart-phone.svg";
 import wifi from "./assets/wifi.svg"
 import movies from "./assets/movies.svg";
 import drinks from "./assets/drinks.svg";
-import { motion, spring } from "motion/react";
+import { backIn, motion, spring } from "motion/react";
 
 export const Services = () => {
    return(
@@ -12,6 +12,7 @@ export const Services = () => {
     initial={{opacity: 0, y: 11}}
    transition={{duration: 0.1, ease: "backIn", bounce: "spring"} }
    whileInView={{opacity: 1, y: -11}}
+   viewport={{once: true}}
     className="services-head">
        <p>Our services</p>
     </motion.div>
@@ -20,6 +21,7 @@ export const Services = () => {
     initial={{opacity: 0, y: 11}}
       transition={{duration: 0.3, ease: "backIn", bounce: "spring"} }
       whileInView={{opacity: 1, y: -11}}
+      viewport={{once: true}}
     className="services-h">
       <h1>What We Offer</h1>
     </motion.div>
@@ -27,6 +29,7 @@ export const Services = () => {
     <motion.div 
     initial={{opacity: 0, y: 11}} transition={{duration: 0.5, ease: "backIn", bounce: "spring"} }
     whileInView={{opacity: 0.8, y: -11}}
+    viewport={{once: true}}
     className="services-p">
        Simple everyday solutions, thoughtfully brought together for your convenience.
     </motion.div>
@@ -34,10 +37,10 @@ export const Services = () => {
     <div className="main-services" id="#phone">
       
       <motion.div 
-        initial={{opacity: 0, y: 10, scale: 0.9}}
+        initial={{opacity: 0, scale: 0.9}}
         whileInView={{opacity: 1, y: -10, scale: 1}}
-        whileHover={{y: -20}}
         transition={{ease: "backIn", duration: 0.1}}
+        viewport={{once: true}}
       className="phone-accenssories">
         <div className="service-svg">
           <img style={{
@@ -61,8 +64,9 @@ export const Services = () => {
       </motion.div>
 
       <motion.div
-      initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
-      whileHover={{y: -20}} transition={{ease: "backIn", duration: 0.3}}
+      initial={{opacity: 0, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
+      transition={{duration: 0.2, ease: backIn}}
+      viewport={{once: true}}
       className="data-and-airtime">
          <div className="service-svg">
             <img style={{
@@ -89,8 +93,9 @@ export const Services = () => {
       </motion.div>
 
       <motion.div 
-      initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
-      whileHover={{y: -20}} transition={{ease: "backIn", duration: 0.5}}
+      initial={{opacity: 0, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
+      transition={{duration: 0.3, ease: backIn}}
+      viewport={{once: true}}
       className="movies">
         <div className="service-svg">
           <img style={{
@@ -115,8 +120,9 @@ export const Services = () => {
       </motion.div>
 
       <motion.div 
-      initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
-      whileHover={{y: -20}} transition={{ease: "backIn", duration: 0.1}}
+      initial={{opacity: 0, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
+      transition={{duration: 0.4, ease: backIn}}
+      viewport={{once: true}}
       className="drinks">
          <div className="service-svg">
            <img style={{

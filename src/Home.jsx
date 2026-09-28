@@ -8,6 +8,7 @@ import { Services } from "./Services";
 import { WhyChooseUs } from "./WhyChooseUs";
 import { HowItWork } from "./HowItWork.jsx"
 import { GetInTouch } from "./GetInTouch";
+import { CustomersSay } from "./CustomersSay.jsx";
 
 export function Home(){
     return(
@@ -18,7 +19,8 @@ export function Home(){
         <WhyChooseUs />
         <Product />
         <About />
-        <Contact />
+        {/* <CustomerSay */}
+        <CustomersSay />
         <HowItWork />
         <GetInTouch />
         </>
