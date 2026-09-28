@@ -6,9 +6,9 @@ export function About(){
         <section id="about" className="about">
 
             <motion.div 
-            initial={{opacity: 0, y: 10, scale: 0.7}} whileInView={{opacity: 1, y: -10, scale: 1}}
-            transition={{duration: 0.2, ease: "backIn"}}
-            
+            initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
+            transition={{duration: 1, ease: "anticipate"}}
+            viewport={{once: true}}
             className="about-left-side">
                <img style={{
                 width: "100%", minHeight: "100%"
@@ -17,8 +17,9 @@ export function About(){
             </motion.div>
 
             <motion.div 
-            initial={{opacity: 0, y: 10, scale: 0.7}} whileInView={{opacity: 1, y: -10, scale: 1}}
-            transition={{duration: 0.2, ease: "backIn"}}
+            initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
+            transition={{duration: 1, ease: "anticipate"}}
+            viewport={{once: true}}
             className="about-right-side">
                 <div className="about-head">
                     <p>Our story</p>

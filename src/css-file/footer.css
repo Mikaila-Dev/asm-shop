@@ -52,6 +52,7 @@
 .main-section-2, 
 .main-section-3, 
 .main-section-4{
+    font-family: "roboto";
     width: 100%;
     max-width: 700px;
     /* border: 1px solid green; */
@@ -64,14 +65,14 @@
 .main-section-2 h3, 
 .main-section-3 h3, 
 .main-section-4 h3{
-   font-family: "space grotesk";
+   font-family: "roboto";
    margin-bottom: 15px;
 }
 .logo-f {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "space grotesk";
+    font-family: "roboto";
     background: #0b9a86;
     width: 80px;
     margin-bottom: 10px;
@@ -82,7 +83,7 @@
     font-weight: bold;
 }
 .main-section-1-p {
-    font-family: "poppins";
+    font-family: "roboto";
     opacity: 0.8;
 }
 .main-section-1 li,
@@ -99,7 +100,8 @@
 .main-section-4 a{
     color: #f0f3e9;
     /* font-family: "space grotesk"; */
-    font-family: "poppins";
+    font-family: "roboto";
+
     text-decoration: none;
 }
 .footer-copyright {
@@ -109,7 +111,9 @@
     padding: 0;
     position: relative;
     left: 0;
-    font-family: "space grotesk";
+    font-family: "roboto";
+    font-weight: 150;
+    font-size: 0.8rem;
     opacity: 0.7;
     width: 100%;
 }

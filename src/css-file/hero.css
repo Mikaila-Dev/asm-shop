@@ -189,9 +189,11 @@
     bottom: 8rem;
     left: 2rem;
     font-size:  clamp(0.5rem, 1vw, 1rem);
-    font-family: "Poppins";
+    font-family: "roboto";
 }
-
+.image-details :nth-child(1){
+    color: green;
+}
 .hero {
     position: relative;
     z-index: 100000;

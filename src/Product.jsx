@@ -9,20 +9,23 @@ export function Product(){
         <motion.div
         initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
         transition={{ease: "backIn", duration: 0.1}}
+        viewport={{once: true}}
         className="product-head">
             <p>Ready when you are</p>
         </motion.div>
 
         <motion.div 
         initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
-        transition={{ease: "backIn", duration: 0.3}}
+        transition={{ease: "backIn", duration: 0.2}}
+        viewport={{once: true}}
         className="product-h">
             <h1>Featured Products</h1>
         </motion.div>
 
         <motion.div 
         initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 0.8, y: -10, scale: 1}}
-        transition={{ease: "backIn", duration: 0.5}}
+        transition={{ease: "backIn", duration: 0.3}}
+        viewport={{once: true}}
         className="product-p">
             <p>Explore our customer favorites.</p>
         </motion.div>
@@ -31,6 +34,7 @@ export function Product(){
             <motion.div
             initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
             whileHover={{y: -20}} transition={{ease: "backIn", duration: 0.1}}
+            viewport={{once: true}}
             className="product-card">
                <img style={{
                 
@@ -55,7 +59,8 @@ export function Product(){
 
             <motion.div
             initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
-        whileHover={{y: -20}} transition={{ease: "backIn", duration: 0.3}}
+            whileHover={{y: -20}} transition={{ease: "backIn", duration: 0.2}}
+            viewport={{once: true}}
             className="product-card">
                <img style={{
                 
@@ -80,7 +85,8 @@ export function Product(){
 
             <motion.div 
             initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
-        whileHover={{y: -20}} transition={{ease: "backIn", duration: 0.5}}
+            whileHover={{y: -20}} transition={{ease: "backIn", duration: 0.3}}
+            viewport={{once: true}}
             className="product-card">
                <img style={{
                 
@@ -104,7 +110,8 @@ export function Product(){
             
             <motion.div 
             initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}
-        whileHover={{y: -20}} transition={{ease: "backIn", duration: 0.1}}
+            whileHover={{y: -20}} transition={{ease: "backIn", duration: 0.1}}
+            viewport={{once: true}}
             className="product-card">
                <img style={{
                 

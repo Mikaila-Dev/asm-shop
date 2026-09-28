@@ -9,10 +9,10 @@
 }
 .customer-say-head {
     color: #0b9a86;
-    font-family: "poppins";
+    font-family: "roboto";
 }
 .customer-say-h {
-    font-family: "space grotesk";
+    font-family: "roboto";
     text-align: center;
     font-size: clamp(0.7rem, 2vw, 1rem);
     /* font-size: 0.8rem; */
@@ -30,14 +30,50 @@
         flex-direction: column;
     }
 }
-.customer-say-containers {
+.customer-say-container-1 {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    background: white;
+    border: 1.5px dotted rgba(0, 0, 0, 0.233);
+    padding: 1em 0.5em;
+    border-radius: 20px;
+    max-width: 1000px;
+    position: relative;
+    z-index: 0;
+}
+.customer-say-container-1 p, .customer-say-container-2 p, .customer-say-container-3 p {
+    /* color: red; */
+    font-family: "roboto";
+
+}
+.customer-say-container-1 h4, .customer-say-container-2 h4, .customer-say-container-3 h4 {
+    font-family: "viga";
+    font-family: 100;
+}
+.customer-say-container-2 {
+    display: flex;
+    flex-direction: column;
+    background: white;
     gap: 15px;
     border: 1.5px dotted rgba(0, 0, 0, 0.233);
     padding: 1em 0.5em;
     border-radius: 20px;
     max-width: 1000px;
+    position: relative;
+    z-index: 1;
+}
+.customer-say-container-3 {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    gap: 15px;
+    border: 1.5px dotted rgba(0, 0, 0, 0.233);
+    padding: 1em 0.5em;
+    border-radius: 20px;
+    max-width: 1000px;
+    position: relative;
+    z-index: 1;
 }
 .say-image {
     color: #efc94c;

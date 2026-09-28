@@ -1,4 +1,5 @@
 import "./css-file/people-say.css"
+import { motion } from "motion/react"
 
 export function CustomersSay(){
     return(
@@ -12,7 +13,11 @@ export function CustomersSay(){
             </div>
 
             <div className="customer-say-main">
-                <div className="customer-say-containers">
+                <motion.div
+                initial={{ opacity: 0.0}}
+                transition={{duration: 1, ease: "anticipate"}}
+                whileInView={{opacity: 1}}
+                className="customer-say-container-1">
                    <div className="say-image">
                        <p>★★★★★</p>
                     {/* should be image */}
@@ -25,10 +30,14 @@ export function CustomersSay(){
                    <div className="say-name">
                     <h4>Amina Yusuf</h4>
                    </div>
-                </div>
+                </motion.div>
 
                 
-                <div className="customer-say-containers">
+                <motion.div 
+                initial={{ opacity: 0.0}}
+                transition={{duration: 1, ease: "anticipate"}}
+                whileInView={{opacity: 1}}
+                className="customer-say-container-2">
                    <div className="say-image">
                        <p>★★★★★</p>
                     {/* should be image */}
@@ -41,10 +50,14 @@ export function CustomersSay(){
                    <div className="say-name">
                     <h4>Mubarak Muhammed</h4>
                    </div>
-                </div>
+                </motion.div>
 
                 
-                <div className="customer-say-containers">
+                <motion.div 
+                initial={{ opacity: 0.0}}
+                transition={{duration: 1, ease: "anticipate"}}
+                whileInView={{opacity: 1}}
+                className="customer-say-container-3">
                    <div className="say-image">
                        <p>★★★★★</p>
                     {/* should be image */}
@@ -57,7 +70,7 @@ export function CustomersSay(){
                    <div className="say-name">
                     <h4>Hauwa Bello</h4>
                    </div>
-                </div>
+                </motion.div>
 
                 
                
