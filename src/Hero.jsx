@@ -19,96 +19,68 @@ export const Hero = () => {
         </div>
 
    
-        {/* <div className="hero-section">
-            <div className="titiles-and-image">
-
-            <div className="titiles">
-            <div className="hero-head">
-            Your everyday essentials hub
-            </div>
-
-           <div className="hero-h">
-            <h1>Charge up. Connect. Chill.</h1>
-           </div>
-
-        <div className="hero-p">
-          <p>Phone charging, quality accessories, data, entertainment, and cold drinks — all in one friendly neighborhood spot.</p>
-        </div>
-
-        <div className="hero-buttons">
-            <button className="hero-button1">Explore Services</button>
-            <button className="hero-button2">Contact Us</button>
-        </div>
-
-        <div className="location">
-            <img style={{
-                width: "30px"
-            }} src={locationImage} alt="location" />
-            <p>Conveniently close to you</p>
-        </div>        
-    </div>
-
-          <div className="hero-image">
-          <img style={{
-            width: "100%", height: "100%", borderRadius: "20px"
-          }} src={heroImage} alt="" />
-          <div className="image-details">
-                <p>One easy stop</p>
-                <p>Stay powered & refreshed</p>
-            </div>
-         </div>
-
-    
-     </div>
-     </div> */}
-
+       
      <section id="#hero" className="hero">
       <div 
     //   initial={{opacity: 0, y: 11, scale: 0.7}} transition={{duration: 0.3, ease: "backIn"} }
     //   whileInView={{opacity: 1, y: -11, scale: 1}}
       className="hero-title">
-         <motion.div initial={{y: 2, opacity: 0}}
-         whileInView={{opacity: 1, y: -2}}
-         transition={{duration: 0.1, ease: "easeIn"}}
+         <motion.div initial={{y: 5, opacity: 0}}
+         whileInView={{opacity: 1, y: -5}}
+         transition={{duration: 1.5, ease: "anticipate"}}
+         viewport={{once: true}}
           className="hero-head">
             Your everyday essentials hub
         </motion.div>
 
-        <motion.div initial={{y: 2, opacity: 0}}
-         whileInView={{opacity: 1, y: -2}}
-         transition={{duration: 0.3, ease: "easeIn"}}
+        <motion.div initial={{y: 5, opacity: 0}}
+         whileInView={{opacity: 1, y: -5}}
+         transition={{duration: 1.5, ease: "anticipate"}}
+         viewport={{once: true}}
         className="hero-h">
             <h1>Charge up. Connect. Chill.</h1>
         </motion.div>
 
         <motion.div 
-        initial={{y: 0.3, opacity: 0}}
-         whileInView={{opacity: 1, y: -0.2}}
-         transition={{ duration: 0.3, ease: "backOut"}}
-         
+        initial={{y: 5, opacity: 0}}
+         whileInView={{opacity: 1, y: -5}}
+         transition={{duration: 1.5, ease: "anticipate"}}
+         viewport={{once: true}}
         className="hero-p">
           <p>Phone charging, quality accessories, data, entertainment, and cold drinks — all in one friendly neighborhood spot.</p>
         </motion.div>
 
-        <div className="hero-buttons">
+        <motion.div 
+        initial={{y: 5, opacity: 0}}
+         whileInView={{opacity: 1, y: -5}}
+         transition={{duration: 1.5, ease: "anticipate"}}
+         viewport={{once: true}}
+        className="hero-buttons">
             <a className="hero-button-link-1" href="#services">
                 <button className="hero-button1">Explore Services</button>
             </a>
             
-            {/* <button className="hero-button2">Contact Us</button> */}
-        </div>
-
-        <div className="location">
+            
+        </motion.div>
+         
+        <motion.div 
+        initial={{y: 5, opacity: 0}}
+         whileInView={{opacity: 1, y: -5}}
+         transition={{duration: 1.5, ease: "anticipate"}}
+         viewport={{once: true}}
+        className="location">
             <img style={{
                 width: "30px"
             }} src={locationImage} alt="location" />
             <p>Conveniently close to you</p>
-        </div>
+        </motion.div>
 
       </div>
        <motion.div 
-       initial={{opacity: 0, y: 11, scale: 0.7}} transition={{duration: 0.5, ease: "backIn"} }
-      whileInView={{opacity: 1, y: -11, scale: 1}}
+         initial={{y: 5, opacity: 0}}
+         whileInView={{opacity: 1, y: -5}}
+         transition={{duration: 1.9, ease: "anticipate"}}
+         viewport={{once: true}}
        className="hero-images">
            <img style={{
             width: "100%", height: "100%", borderRadius: "20px"
