@@ -20,8 +20,9 @@ export function Home(){
         <Product />
         <About />
         {/* <CustomerSay */}
-        <CustomersSay />
         <HowItWork />
+        <CustomersSay />
+        <Contact />
         <GetInTouch />
         </>
     )

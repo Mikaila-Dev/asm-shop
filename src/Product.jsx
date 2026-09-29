@@ -51,7 +51,7 @@ export function Product(){
                <div className="price-and-order-button">
                 <h4>From ₦3,000</h4>
                 <div className="enquire">
-                    <a href="#">Enquire →</a>
+                    <a href="#contact">Enquire →</a>
                 </div>
                </div>
 
@@ -77,7 +77,7 @@ export function Product(){
                <div className="price-and-order-button">
                 <h4>From ₦3,000</h4>
                 <div className="enquire">
-                    <a href="#">Enquire →</a>
+                    <a href="#contact">Enquire →</a>
                 </div>
               </div>
         
@@ -103,7 +103,7 @@ export function Product(){
                <div className="price-and-order-button">
                 <h4>From ₦3,000</h4>
                 <div className="enquire">
-                    <a href="#">Enquire →</a>
+                    <a href="#contact">Enquire →</a>
                 </div>
                </div>
             </motion.div>
@@ -128,7 +128,7 @@ export function Product(){
                <div className="price-and-order-button">
                 <h4>From ₦3,000</h4>
                 <div className="enquire">
-                    <a href="#">Enquire →</a>
+                    <a href="#contact">Enquire →</a>
                 </div>
                </div>
             </motion.div>

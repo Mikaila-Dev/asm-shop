@@ -51,10 +51,12 @@ export function Footer(){
                  <li><a href="#">
                     Gadamayo hayin gada
                 </a></li>
-                 <li><a href="#">
+                 <li><a href="tel:+2349117366829">
                     +234 911 736 6829
                 </a></li>
-                 <li><a href="#">
+                 <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=mikailamohammad23@gmail.com"
+                    target="_blank"
+                   rel="noopener noreferrer">
                     mikailamohammad23@gmail.com
                </a>
                </li>

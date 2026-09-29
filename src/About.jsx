@@ -45,7 +45,7 @@ export function About(){
                 </div>
 
                 <div className="about-learn-more">
-                    <a href="#">Learn More →</a>
+                    <a href="#contact">Learn More →</a>
                 </div>
             </motion.div>
         </section>

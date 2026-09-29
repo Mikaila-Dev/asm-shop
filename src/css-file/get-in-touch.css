@@ -11,26 +11,25 @@
     background: #e5f6f2;
 }
 .get-in-touch-h {
-    font-family: "space grotesk";
+    font-family: "roboto";
 }
 .get-in-touch-p {
-    font-family: "poppins";
+    font-family: "roboto";
     opacity: 0.8;
 }
 .get-in-touch-a{
     display: flex;
     width: 100%;
 }
-.get-in-touch-a a{
+ .get-in-touch-a a{
     height: 50px;
     text-decoration: none;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.get-in-touch-a button {
-    font-family: "space grotesk";
+
+    font-family: "roboto";
     font-size: clamp(1rem, 2vw, 1.1rem);
     display: flex;
     align-items: center;
@@ -44,4 +43,5 @@
     max-width: 250px;
     font-weight: bolder;
     border-radius: 25px;
+    margin: 0 auto;
 }
