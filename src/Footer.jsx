@@ -33,10 +33,10 @@ export function Footer(){
             <div className="main-section-2">
                 <h3>Quick Links</h3>
                 <Link to='/#home'>Home</Link>
-                <Link to='/#'>Services</Link>
-                <Link to='/#'>Product</Link>
-                <Link to='/#'>About</Link>
-                <Link to='/#'>Contact</Link>
+                   <Link to='#'>Services</Link>
+                <Link to='#'>Product</Link>
+                <Link to='#'>About</Link>
+                <Link to='/contact'>Contact</Link>
             </div>
 
             <div className="main-section-3">

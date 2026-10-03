@@ -12,12 +12,23 @@ import { Contact } from './Contact.jsx'
 import { GetInTouch } from './GetInTouch.jsx'
 import { Footer } from './Footer.jsx'
 import { Home } from "./Home.jsx";
+import { useEffect } from "react";
 
 
 function App() {
+
+  useEffect(() => {
+    const element = document.getElementById("app");
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  }, []);
   
   return (
-    <>
+    <div id="app">
    <Header />
 
     <Routes>
@@ -28,7 +39,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
     </Routes>
     <Footer />
-    </>
+    </div>
   )
 }
 

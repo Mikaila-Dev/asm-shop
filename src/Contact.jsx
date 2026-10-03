@@ -4,12 +4,12 @@ import hero from "./assets/hero-image.avif"
 import { useEffect } from "react";
 
 export function Contact(){
-  useEffect(() => {
-    const element = document.getElementById('contact');
-    if(element){
-      element.scrollIntoView({behavior: 'smooth'})
-    }
-  })
+  // useEffect(() => {
+  //   const element = document.getElementById('contact');
+  //   if(element){
+  //     element.scrollIntoView({behavior: 'smooth'})
+  //   }
+  // })
     return(
         <section id="contact" className="contact">
            <motion.div 

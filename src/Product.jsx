@@ -5,15 +5,15 @@ import { useEffect } from "react";
 
 export function Product(){
 
-    useEffect(() => {
-    const element = document.getElementById("products");
+//     useEffect(() => {
+//     const element = document.getElementById("products");
 
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
-    }
-  }, []);
+//     if (element) {
+//       element.scrollIntoView({
+//         behavior: "smooth",
+//       });
+//     }
+//   }, []);
 
 
    return(

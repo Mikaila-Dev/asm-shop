@@ -8,12 +8,12 @@ import { useEffect } from "react";
 
 export const Services = () => {
 
-  useEffect(() => {
-    const element = document.getElementById('services');
-    if(element){
-      element.scrollIntoView({behavior: 'smooth'})
-    }
-  })
+  // useEffect(() => {
+  //   const element = document.getElementById('services');
+  //   if(element){
+  //     element.scrollIntoView({behavior: 'smooth'})
+  //   }
+  // })
    return(
     <div id="services" className="services">
     <motion.div

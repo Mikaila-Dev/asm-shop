@@ -1,7 +1,8 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import "./css-file/header.css"
 import { Link } from "react-router-dom";
 import {motion} from "motion/react"
+// import { useState } from "react";
 
 export const Header = ()=> {
     const [hamburger, setHamburger] = useState(false);
@@ -12,10 +13,17 @@ export const Header = ()=> {
     const handleClickHamburger = () => {
        setHamburger(!hamburger);
     }
-  
+     
+
+    useEffect(() => {
+    const element = document.getElementById('header');
+    if(element){
+      element.scrollIntoView({behavior: 'smooth'})
+    }
+  },[])
 
     return(
-        <header>
+        <header id="header">
         <div className="logo-name">
             <div className="logo">
                 ASM
