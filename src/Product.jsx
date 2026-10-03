@@ -1,10 +1,23 @@
 import pixel from "./assets/pexel.avif";
 import "./css-file/product.css";
 import {motion} from "motion/react"
+import { useEffect } from "react";
 
 export function Product(){
+
+    useEffect(() => {
+    const element = document.getElementById("products");
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  }, []);
+
+
    return(
-    <section id="product" className="product">
+    <section id="products" className="product">
 
         <motion.div
         initial={{opacity: 0, y: 10, scale: 0.9}} whileInView={{opacity: 1, y: -10, scale: 1}}

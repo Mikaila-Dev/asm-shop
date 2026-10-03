@@ -2,6 +2,8 @@ import "./css-file/footer.css";
 import facebook from "./assets/facebook.svg";
 import insta from "./assets/insta.svg";
 import message from "./assets/message.svg";
+import { Link } from "react-router-dom"
+
 export function Footer(){
     return(
         <footer className="footer">
@@ -30,11 +32,11 @@ export function Footer(){
 
             <div className="main-section-2">
                 <h3>Quick Links</h3>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#product">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <Link to='/#home'>Home</Link>
+                <Link to='/services#services'>Services</Link>
+                <Link to='/product#product'>Product</Link>
+                <Link to='/about#about'>About</Link>
+                <Link to='/contact#contact'>Contact</Link>
             </div>
 
             <div className="main-section-3">

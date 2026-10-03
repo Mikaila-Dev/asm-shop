@@ -9,10 +9,18 @@ import { WhyChooseUs } from "./WhyChooseUs";
 import { HowItWork } from "./HowItWork.jsx"
 import { GetInTouch } from "./GetInTouch";
 import { CustomersSay } from "./CustomersSay.jsx";
+import { useEffect } from "react";
 
 export function Home(){
+
+    useEffect(() => {
+     const element = document.getElementById('home');
+     if(element){
+        element.scrollIntoView({behavior: "smooth"})
+     }
+    })
     return(
-        <>
+        <div id="home">
         {/* <Header /> */}
         <Hero />
         <Services />
@@ -24,6 +32,6 @@ export function Home(){
         <CustomersSay />
         <Contact />
         <GetInTouch />
-        </>
+        </div>
     )
 }

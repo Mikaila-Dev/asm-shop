@@ -4,8 +4,16 @@ import wifi from "./assets/wifi.svg"
 import movies from "./assets/movies.svg";
 import drinks from "./assets/drinks.svg";
 import { backIn, motion, spring } from "motion/react";
+import { useEffect } from "react";
 
 export const Services = () => {
+
+  useEffect(() => {
+    const element = document.getElementById('services');
+    if(element){
+      element.scrollIntoView({behavior: 'smooth'})
+    }
+  })
    return(
     <div id="services" className="services">
     <motion.div

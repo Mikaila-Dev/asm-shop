@@ -1,7 +1,14 @@
 import leftImage from "./assets/about-image.avif";
 import {motion} from "motion/react"
 import "./css-file/about.css"
+import { useEffect } from "react";
 export function About(){
+    useEffect(() => {
+        const element = document.getElementById('about');
+        if(element){
+            element.scrollIntoView({behavior: 'smooth'})
+        }
+    })
     return(
         <section id="about" className="about">
 
