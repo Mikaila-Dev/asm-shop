@@ -102,7 +102,8 @@
     font-family: "viga";
     color: rgba(0, 0, 0, 0.836);
     /* font-family: "Josefin Sans"; */
-    font-size: 1.8rem;
+    /* font-size: 1rem; */
+    font-size: clamp(1rem, 2vw, 3rem);
     /* text-align: start;
     display: flex;
     justify-content: center; */
@@ -212,6 +213,7 @@
     gap: 90px;
     align-items: center;
 }
+
 .hero-title {
     width: 800px;
     height: 400px;
@@ -229,6 +231,14 @@
     flex-direction: column;
     gap: 20px;
     z-index: 100;
+    /* padding-top: 100px; */
+}
+@media(max-width: 853px){
+    .hero-title {
+        display: flex;
+        /* align-items: center; */
+        justify-content: end;
+    }
 }
 @media(max-width: 783px){
     .hero-title {

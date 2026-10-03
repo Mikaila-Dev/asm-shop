@@ -1,7 +1,7 @@
 import { About } from "./About";
 import { Contact } from "./Contact";
 import { Footer } from "./Footer";
-import { Header } from "./Header";
+import { Header } from "./Header.jsx";
 import { Hero } from "./Hero";
 import { Product } from "./Product";
 import { Services } from "./Services";
@@ -27,7 +27,6 @@ export function Home(){
         <WhyChooseUs />
         <Product />
         <About />
-        {/* <CustomerSay */}
         <HowItWork />
         <CustomersSay />
         <Contact />
